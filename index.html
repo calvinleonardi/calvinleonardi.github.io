@@ -88,6 +88,7 @@
 			Java, Firebase, SQL, Mobile Device Programming. Strong engineering professional with a Bachelor's 
 			degree focused in Internet Technology from Institut Sains dan Teknologi Terpadu Surabaya.
           </div>
+		  <input type="button" onclick="alertCookie();" value="Try get cookie" name="click"/>
         </div>
 
         <div class="row">
@@ -493,7 +494,37 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+	window.onload = function(){
+		setCookie('auth', 'test', 3);
+	};
+	
+	function setCookie(cname, cvalue, exdays) {
+	  const d = new Date();
+	  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	  let expires = "expires="+d.toUTCString();
+	  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
 
+	function getCookie(cname) {
+	  let name = cname + "=";
+	  let ca = document.cookie.split(';');
+	  for(let i = 0; i < ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+		  c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		  return c.substring(name.length, c.length);
+		}
+	  }
+	  return "";
+	}
+	
+	function alertCookie(){
+		console.log(getCookie('auth'));
+	}
+  </script>
 </body>
 
 </html>
