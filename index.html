@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Calvin Leonardi's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Calvin Leonardi is a Salesforce Technical Consultant specializing in automation, integrations, Service Cloud, Agentforce, and Data Cloud solutions." name="description">
+  <meta content="Calvin Leonardi, Salesforce Technical Consultant, Salesforce Developer, Agentforce, Data Cloud, Service Cloud, Apex, LWC" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -45,11 +45,11 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile.jpg" alt="Portrait of Calvin Leonardi" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Calvin Leonardi</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/calvinlleonardi/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=calvin_agus@yahoo.co.id&tf=1" class="instagram"><i class="bx bxs-envelope"></i></a>
+          <a href="mailto:calvin_agus@yahoo.co.id" class="instagram"><i class="bx bxs-envelope"></i></a>
           <a href="https://github.com/calvinleonardi" class="google-plus"><i class="bx bxl-github"></i></a>
           <a href="https://www.linkedin.com/in/calvinleonardi/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
@@ -59,8 +59,11 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Skills</span></a></li>
+          <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -70,7 +73,25 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Calvin Leonardi</h1>
-      <p>I'm a <span class="typed" data-typed-items="Salesforce Developer, Web Developer, Android Developer, Flutter Developer"></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Salesforce Technical Consultant, Salesforce Developer, Integration Builder, AI and Automation Enthusiast"></span></p>
+      <div class="hero-actions mt-4">
+        <a href="#portfolio" class="btn btn-primary me-2">View My Work</a>
+        <a href="assets/Calvin Leonardi-resume.pdf" class="btn btn-outline-light">Download CV</a>
+      </div>
+      <div class="row text-center text-white mt-4 g-3 hero-highlights">
+        <div class="col-6 col-md-3">
+          <strong>3</strong><br>Salesforce Certifications
+        </div>
+        <div class="col-6 col-md-3">
+          <strong>5+</strong><br>Years Experience
+        </div>
+        <div class="col-6 col-md-3">
+          <strong>Indonesia</strong><br>Based in Surabaya
+        </div>
+        <div class="col-6 col-md-3">
+          <strong>Open</strong><br>to Opportunities
+        </div>
+      </div>
     </div>
   </section><!-- End Hero -->
 
@@ -83,24 +104,18 @@
         <div class="section-title">
           <h2>About</h2>
           <div style="text-align: justify; text-justify: inter-word;">
-            Hi! My name is Calvin Leonardi. My focus of study is currently Internet Technology 
-			which is focusing on how to build a system and implement it on an application using 
-			various up-to-date technology. Skilled in Salesforce.com, Apex Programming, Lightning Web Component, 
-			Java, Firebase, SQL. Strong engineering professional with a Bachelor's 
-			degree focused in Internet Technology from Institut Sains dan Teknologi Terpadu Surabaya.
+            I'm a Salesforce Technical Consultant with experience designing and delivering solutions that improve business processes and customer operations. My work covers platform customization, automation, integrations, and AI-powered capabilities within the Salesforce ecosystem. I enjoy turning complex requirements into scalable, maintainable solutions that create real value for users and stakeholders.
           </div>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile.jpg" class="img-fluid" alt="Calvin Leonardi profile photo">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Salesforce Associate Consultant at VISEO APAC</h3>
+            <h3>Salesforce Technical Consultant at VISEO APAC</h3>
             <p class="fst-italic">
-              A certified experience from Dicoding Academy in the field of Web Development 
-              and Android for approximately 3 years. With this expertise, so I try to take 
-              advantage to work in the IT field especially the Web, Android or Salesforce development.
+              Experienced in building Salesforce solutions using Flow, Apex, Lightning Web Components, Service Cloud, Agentforce, and Data Cloud. I focus on creating systems that are efficient, reliable, and aligned with business goals.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -113,9 +128,9 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>calvin_agus@yahoo.co.id</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Not Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Open to Opportunities</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Resume / CV:</strong> 
 					<a href="assets/Calvin Leonardi-resume.pdf"><span>Download Here</span></a>
 				  </li>
@@ -123,11 +138,7 @@
               </div>
             </div>
             <div style="text-align: justify; text-justify: inter-word;">
-              I have many Dicoding Cerification to support my career some of that are, Learn 
-              JavaScript Programming Basics, Learn to Make Flutter Apps for Beginners, Cloud Practitioner Essentials,
-              Learn Fundamentals of Android Apps, Learn to Make Back-End Apps for Beginners, 
-              and more on my Linkedin. I also have Salesforce Certified Platform Developer I Cerification 
-			  please check my Linkedin for more.
+              I hold 3 Salesforce certifications: Salesforce Certified Platform Developer I, Salesforce Certified Administrator, and Salesforce Certified AI Associate. These certifications support my hands-on consulting experience across automation, integrations, and AI-driven Salesforce solutions.
             </div>
           </div>
         </div>
@@ -135,138 +146,79 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <!-- <section id="facts" class="facts">
+    <!-- ======= Focus Section ======= -->
+    <section id="focus" class="facts">
       <div class="container">
 
         <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>What I Focus On</h2>
+          <p>I enjoy building solutions that reduce manual work, connect systems, and help teams get more value from Salesforce.</p>
         </div>
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="count-box h-100">
+              <i class="bi bi-gear"></i>
+              <h4>Automation</h4>
+              <p>Build Salesforce solutions with Flow, Apex, and Lightning Web Components to reduce manual work and improve operational efficiency.</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box h-100">
+              <i class="bi bi-diagram-3"></i>
+              <h4>Integration</h4>
+              <p>Connect Salesforce with external systems through APIs and AppExchange tools to improve data flow and business continuity.</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box h-100">
+              <i class="bi bi-stars"></i>
+              <h4>AI &amp; Service</h4>
+              <p>Support customer operations with Service Cloud, Agentforce, and Data Cloud to deliver smarter and more connected experiences.</p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section> --><!-- End Facts Section -->
+    </section><!-- End Focus Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>Core Skills</h2>
           <p>
-            Here are some of my technical skills (including abilities, knowledge, or experties required 
-            to perform specific job-related tasks). I am passionate to learn about new things or new 
-            technology that this skills set is based on how well i know about this skills so far.
+            My main strengths are centered around Salesforce delivery, platform customization, integrations, and practical cross-stack development.
           </p>
         </div>
 
         <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML/CSS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="resume-item pb-0">
+              <h4>Salesforce</h4>
+              <p><em>Apex, Flow, Lightning Web Components, Service Cloud, Agentforce, Data Cloud, Salesforce Administration</em></p>
             </div>
 
-            <div class="progress">
-              <span class="skill">SQL <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="resume-item pb-0 mt-4">
+              <h4>Integration &amp; Data</h4>
+              <p><em>REST API, AppExchange Solutions, SQL, Firebase</em></p>
             </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			
-			<div class="progress">
-              <span class="skill">Salesforce.com <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			
-			<div class="progress">
-              <span class="skill">Lightning Web Component <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="resume-item pb-0">
+              <h4>Web &amp; Mobile</h4>
+              <p><em>JavaScript, HTML/CSS, Java, Flutter, Android Development</em></p>
             </div>
 
-            <div class="progress">
-              <span class="skill">Java <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="resume-item pb-0 mt-4">
+              <h4>How I Work</h4>
+              <p><em>Custom development, automation implementation, API integration, debugging, and building scalable Salesforce solutions with clean, practical execution.</em></p>
             </div>
-
-            <div class="progress">
-              <span class="skill">Dart/Flutter <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			
-			<div class="progress">
-              <span class="skill">Apex Programming <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
 
         </div>
@@ -274,12 +226,45 @@
       </div>
     </section><!-- End Skills Section -->
 
+    <!-- ======= Certifications Section ======= -->
+    <section id="certifications" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>Certified across platform development, administration, and AI-powered Salesforce solutions.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="resume-item pb-0">
+              <h4>Salesforce Certified Platform Developer I</h4>
+              <p><em>Strong foundation in custom development on the Salesforce platform.</em></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item pb-0">
+              <h4>Salesforce Certified Administrator</h4>
+              <p><em>Validated experience in platform configuration, user management, and business process support.</em></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="resume-item pb-0">
+              <h4>Salesforce Certified AI Associate</h4>
+              <p><em>Focused on practical AI concepts and their application across the Salesforce ecosystem.</em></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Certifications Section -->
+
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2>Experience</h2>
         </div>
 
         <div class="row">
@@ -289,17 +274,14 @@
               <h4>Google Developer Group Surabaya</h4>
               <h5>November 2016 - November 2019</h5>
               <p><em>
-                My job as a Registration Assistant to check event participants for 
-                every event held by GDG and re-register on the day of the event.
+                Supported event operations by managing participant registration and on-site check-in for community events.
               </em></p>
             </div>
             <div class="resume-item pb-0">
               <h4>Student Executive Board (BEM)</h4>
               <h5>December 2016 - December 2017</h5>
               <p><em>
-                My job is to manage the inventory on Student Executive Board Office
-                and prepare all the equipment needed for events held by Student Executive
-                Board.
+                Managed office inventory and prepared equipment logistics for student organization events.
               </em></p>
             </div>
 
@@ -308,7 +290,7 @@
               <h4>Institut Sains dan Teknologi Terpadu Surabaya</h4>
               <h5>2016 - 2020</h5>
               <p><em>Bachelor of Informatics Engineering</em></p>
-              <p>Majoring in Internet Technology and graduated with GPA 3.35 out of 4.00.</p>
+              <p>Focused on Internet Technology and graduated with a GPA of 3.35 / 4.00.</p>
             </div>
             <div class="resume-item">
               <h4>Petra 5 Senior High School Surabaya</h4>
@@ -321,9 +303,13 @@
 			<div class="resume-item">
               <h4>VISEO APAC</h4>
               <h5>June 2021 - Present</h5>
-              <p><em>Salesforce Associate Consultant</em></p>
+              <p><em>Salesforce Technical Consultant</em></p>
               <ul>
-                <li>Developer Team for VISEO Indonesia</li>
+                <li>Delivered Salesforce solutions for client projects across automation, service workflows, and platform customization.</li>
+                <li>Built custom business logic and user-facing features using Flow, Apex, and Lightning Web Components.</li>
+                <li>Integrated Salesforce with external systems and third-party applications through REST APIs and AppExchange packages.</li>
+                <li>Worked with Agentforce and Data Cloud to support centralized customer data and improve agent productivity.</li>
+                <li>Collaborated with cross-functional teams and external vendors to support Service Cloud Voice implementation.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -331,7 +317,8 @@
               <h5>January 2019 - June 2019</h5>
               <p><em>Android Developer</em></p>
               <ul>
-                <li>Making Academic Calendar for my collage</li>
+                <li>Developed an academic calendar application to support campus scheduling and information access.</li>
+                <li>Contributed to mobile application development based on institutional needs.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -339,8 +326,8 @@
               <h5>January 2018 - February 2018</h5>
               <p><em>Software Engineer</em></p>
               <ul>
-                <li>Help making a Front-end</li>
-                <li>Making crawler to get data from website</li>
+                <li>Contributed to front-end development for web-based projects.</li>
+                <li>Built a web crawler to collect and process data from external websites.</li>
               </ul>
             </div>
           </div>
@@ -354,13 +341,36 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Featured Work</h2>
           <p>
-            This is some pictures of my works that used for checking info of new Movies or TV Shows.
-            If you love the Movies or TV Shows, you can mark the heart button and you can see on
-            Favourite Movies or TV Shows tabs. This app can also notif you if there a new Movies 
-            and TV Shows. I use an API from moviedb to get Movies and TV Shows info. This app can only run on Android Devices. 
+            A selection of work that reflects my Salesforce consulting experience, followed by a featured mobile application project with screenshots below.
           </p>
+        </div>
+
+        <div class="row portfolio-summary-row" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-summary-card h-100">
+              <h3>Salesforce Automation Solutions</h3>
+              <p>Designed and implemented automation using Flow and Apex to reduce repetitive manual work and improve operational efficiency across client processes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-summary-card h-100">
+              <h3>Salesforce Integrations</h3>
+              <p>Connected Salesforce with external systems through REST APIs and AppExchange packages to support more reliable data flow and business continuity.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-summary-card h-100">
+              <h3>Agentforce and Data Cloud</h3>
+              <p>Worked on AI-powered and data-driven Salesforce capabilities that help teams operate with better context, smarter workflows, and centralized customer data.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-gallery-heading" data-aos="fade-up" data-aos-delay="100">
+          <h3>Movie Catalogue Android App</h3>
+          <p>This featured personal project showcases an Android application for browsing movies and TV shows, saving favorites, searching content, switching language preferences, and receiving notifications using The Movie Database API.</p>
         </div>
 
         <!-- <div class="row" data-aos="fade-up">
@@ -378,72 +388,76 @@
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="Movie Catalogue movies screen">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Movies">Detail</a>
+                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Movies">Detail</a>
               </div>
             </div>
+            <p class="mt-2"><strong>Movies Home</strong><br>Main browsing view for discovering movie content from The Movie Database API.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="Movie Catalogue TV shows screen">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman TV Shows">Detail</a>
+                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue TV Shows">Detail</a>
+              </div>
+            </div>
+            <p class="mt-2"><strong>TV Shows</strong><br>Dedicated section for browsing television content in the same mobile experience.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="Movie Catalogue detail screen">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Detail">Detail</a>
+              </div>
+            </div>
+            <p class="mt-2"><strong>Detail View</strong><br>Screen for viewing richer movie information before saving or exploring further.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="Movie Catalogue Android app preview">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Android App">Detail</a>
+              </div>
+            </div>
+            <p class="mt-2"><strong>Favorites</strong><br>Saved-content experience for returning to preferred movies and shows quickly.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="Movie Catalogue TV shows screen">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue TV Shows">Detail</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="Movie Catalogue search screen">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Detail Movies">Detail</a>
+                <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Search">Detail</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="Movie Catalogue language settings screen">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Favorite Movies">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Favorite TV Shows">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Search">Detail</a>
+                <a href="assets/img/portfolio/portfolio-7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Language Settings">Detail</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="Movie Catalogue notifications screen">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Ganti Bahasa">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Halaman Notifikasi">Detail</a>
+                <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Movie Catalogue Notifications">Detail</a>
               </div>
             </div>
           </div>
@@ -451,6 +465,13 @@
         </div>
       </div>
       <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-10">
+            <p>
+              This Android application was built as a personal project focused on mobile UI, API integration, content discovery, search, favorites, language settings, and release notifications.
+            </p>
+          </div>
+        </div>
         <div class="row">
           <div class="col text-center">
             <a href="https://github.com/calvinleonardi/MovieCatalogue" class="btn btn-primary">Code on My Github</a>
@@ -459,6 +480,48 @@
       </div>
       
     </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Let's Connect</h2>
+          <p>If you'd like to discuss Salesforce consulting, project opportunities, or collaboration, feel free to reach out.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-8">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:calvin_agus@yahoo.co.id">calvin_agus@yahoo.co.id</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-linkedin"></i>
+                <h4>LinkedIn:</h4>
+                <p><a href="https://www.linkedin.com/in/calvinleonardi/">linkedin.com/in/calvinleonardi</a></p>
+              </div>
+
+              <div class="address">
+                <i class="bi bi-github"></i>
+                <h4>GitHub:</h4>
+                <p><a href="https://github.com/calvinleonardi">github.com/calvinleonardi</a></p>
+              </div>
+
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Surabaya, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -493,6 +556,20 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      const birthDate = new Date(1998, 7, 12);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDifference = today.getMonth() - birthDate.getMonth();
+
+      if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+        age -= 1;
+      }
+
+      document.getElementById('age').textContent = age;
+    })();
+  </script>
 </body>
 
 </html>

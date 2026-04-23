@@ -267,6 +267,8 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  max-width: 760px;
+  padding: 0 20px;
 }
 
 #hero h1 {
@@ -291,6 +293,35 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 
+#hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#hero .hero-actions .btn {
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+#hero .hero-actions .btn-outline-light:hover {
+  color: #0f2746;
+}
+
+#hero .hero-highlights {
+  background: rgba(4, 11, 20, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 18px 10px;
+  backdrop-filter: blur(6px);
+}
+
+#hero .hero-highlights strong {
+  font-size: 24px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -302,10 +333,18 @@ h6 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  #hero .hero-actions .btn {
+    width: 100%;
+  }
+  #hero .hero-highlights {
+    padding: 14px 6px;
+  }
+  #hero .hero-highlights strong {
+    font-size: 20px;
   }
 }
 
@@ -392,16 +431,37 @@ section {
 }
 
 .facts .count-box {
-  padding: 30px;
+  padding: 32px 28px;
   width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(18, 47, 87, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facts .count-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 55px rgba(18, 47, 87, 0.14);
 }
 
 .facts .count-box i {
-  display: block;
-  font-size: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
   color: #149ddd;
-  float: left;
-  line-height: 0;
+  line-height: 1;
+  border-radius: 16px;
+  background: rgba(20, 157, 221, 0.12);
+}
+
+.facts .count-box h4 {
+  margin: 18px 0 0 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #272829;
 }
 
 .facts .count-box span {
@@ -414,10 +474,11 @@ section {
 }
 
 .facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
+  padding: 14px 0 0 0;
+  margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.7;
   color: #122f57;
 }
 
@@ -538,6 +599,45 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+
+.portfolio .portfolio-summary-row {
+  margin-bottom: 10px;
+}
+
+.portfolio .portfolio-summary-card {
+  padding: 28px 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(18, 47, 87, 0.08);
+}
+
+.portfolio .portfolio-summary-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: #173b6c;
+}
+
+.portfolio .portfolio-summary-card p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: #355070;
+}
+
+.portfolio .portfolio-gallery-heading {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-gallery-heading h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #173b6c;
+}
+
+.portfolio .portfolio-gallery-heading p {
+  margin-bottom: 0;
+  line-height: 1.7;
 }
 
 .portfolio #portfolio-flters {
@@ -852,14 +952,16 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 100px;
 }
 
 .contact .info {
-  padding: 30px;
+  padding: 34px 32px;
   background: #fff;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 22px;
+  border: 1px solid rgba(20, 157, 221, 0.12);
+  box-shadow: 0 20px 50px rgba(18, 47, 87, 0.10);
 }
 
 .contact .info i {
@@ -887,8 +989,14 @@ section {
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 15px;
   color: #173b6c;
+}
+
+.contact .info .email,
+.contact .info .phone,
+.contact .info .address {
+  padding: 12px 0;
 }
 
 .contact .info .email p {
